@@ -1,4 +1,8 @@
 
+https://github.com/NVlabs/stylegan2-ada-pytorch
+
+<br>
+
 $ nvidia-smi
 
 https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
@@ -14,6 +18,25 @@ https://github.com/NVlabs/stylegan2-ada-pytorch
 pip install setuptools
 
 sudo apt install nvidia-cuda-toolkit
+
+<br><br>
+
+https://github.com/yuval-alaluf/SAM
+
+<br>
+
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+pip install ninja setuptools matplotlib tqdm
+
+python scripts/inference_side_by_side.py \
+--exp_dir=results/output \
+--checkpoint_path=results/sam_ffhq_aging.pt \
+--data_path=results/input \
+--test_batch_size=4 \
+--test_workers=4 \
+--target_age=0,10,20,30,40,50,60,70,80
+
 
 <br><br><br><br>
 
