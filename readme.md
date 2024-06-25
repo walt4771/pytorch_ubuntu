@@ -11,7 +11,7 @@ https://velog.io/@dongju101/error-externally-managed-environment-%EB%AC%B8%EC%A0
 
 https://github.com/NVlabs/stylegan2-ada-pytorch
 
-
+pip install setuptools
 
 
 
