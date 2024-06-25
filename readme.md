@@ -13,7 +13,9 @@ https://github.com/NVlabs/stylegan2-ada-pytorch
 
 pip install setuptools
 
+sudo apt install nvidia-cuda-toolkit
 
+<br><br><br><br>
 
 sudo apt install python3-venv
 
