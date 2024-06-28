@@ -54,3 +54,33 @@ source 가상 환경 경로/bin/activate
  <img src = "files/1_downscaled.jpg" width="30%" height="30%">
  <img src = "files/1_upscaled.png" width="30%" height="30%">
 </p>
+<br>
+<p float="left">
+ <img src = "files/2.jpeg" width="30%" height="30%">
+ <img src = "files/2_downscaled.jpg" width="30%" height="30%">
+ <img src = "files/2_upscaled.png" width="30%" height="30%">
+</p>
+<br>
+<p float="left">
+ <img src = "files/3.jpeg" width="30%" height="30%">
+ <img src = "files/3_downscaled.jpg" width="30%" height="30%">
+ <img src = "files/3_upscaled.png" width="30%" height="30%">
+</p>
+<br>
+<p float="left">
+ <img src = "files/4.jpeg" width="30%" height="30%">
+ <img src = "files/4_downscaled.jpg" width="30%" height="30%">
+ <img src = "files/4_upscaled.png" width="30%" height="30%">
+</p>
+<br>
+<p float="left">
+ <img src = "files/5.jpeg" width="30%" height="30%">
+ <img src = "files/5_downscaled.jpg" width="30%" height="30%">
+ <img src = "files/5_upscaled.png" width="30%" height="30%">
+</p>
+<br>
+<p float="left">
+ <img src = "files/6.jpeg" width="30%" height="30%">
+ <img src = "files/6_downscaled.jpg" width="30%" height="30%">
+ <img src = "files/6_upscaled.png" width="30%" height="30%">
+</p>
