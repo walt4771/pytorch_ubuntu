@@ -46,3 +46,7 @@ python3 -m venv 'venvname'
 
 source 가상 환경 경로/bin/activate
 
+
+<br><br><br>
+
+<img src = "files/1.jpeg" width="width size%" height="height size%">
