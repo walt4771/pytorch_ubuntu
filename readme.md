@@ -49,6 +49,8 @@ source 가상 환경 경로/bin/activate
 
 <br><br><br>
 
-<img src = "files/1.jpeg" width="30%" height="30%">
-<img src = "files/1_downscaled.jpg" width="30%" height="30%">
-<img src = "files/1_upscaled.png" width="30%" height="30%">
+<p float="left">
+ <img src = "files/1.jpeg" width="33%" height="33%">
+ <img src = "files/1_downscaled.jpg" width="33%" height="33%">
+ <img src = "files/1_upscaled.png" width="33%" height="33%">
+</p>
