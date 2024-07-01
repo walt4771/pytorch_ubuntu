@@ -91,5 +91,29 @@ source 가상 환경 경로/bin/activate
 python generate.py --outdir=out --trunc=1 --seeds=85,265,297,849 \
     --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metfaces.pkl
 
+files/custom_model/1_aging.png
 
+<p float="left">
+ <img src = "files/custom_model/1_source.png" width="30%" height="30%">
+ <img src = "files/custom_model/1_upscaled.png" width="30%" height="30%">
+ <img src = "files/custom_model/1_aging.png" width="30%" height="30%">
+</p>
+<br>
+<p float="left">
+ <img src = "files/custom_model/2_source.png" width="30%" height="30%">
+ <img src = "files/custom_model/2_upscaled.png" width="30%" height="30%">
+ <img src = "files/custom_model/2_aging.png" width="30%" height="30%">
+</p>
+<br>
+<p float="left">
+ <img src = "files/custom_model/3_source.png" width="30%" height="30%">
+ <img src = "files/custom_model/3_upscaled.png" width="30%" height="30%">
+ <img src = "files/custom_model/3_aging.png" width="30%" height="30%">
+</p>
+<br>
+<p float="left">
+ <img src = "files/custom_model/4_source.png" width="30%" height="30%">
+ <img src = "files/custom_model/4_upscaled.png" width="30%" height="30%">
+ <img src = "files/custom_model/4_aging.png" width="30%" height="30%">
+</p>
     
