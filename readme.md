@@ -119,3 +119,5 @@ files/custom_model/1_aging.png
  <img src = "files/custom_model/4_aging.png" width="30%" height="30%">
 </p>
     
+<>
+https://velog.io/@zxxzx1515/%EC%98%A4%EB%A5%98-%EB%85%B8%ED%8A%B8-libstdc.so.6-version-glibcxx3.4.30-not-found
