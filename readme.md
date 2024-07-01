@@ -48,7 +48,9 @@ source 가상 환경 경로/bin/activate
 
 
 <br><br><br>
-
+<h1> 
+ Upscaling Test
+</h1>
 <p float="left">
  <img src = "files/1.jpeg" width="30%" height="30%">
  <img src = "files/1_downscaled.jpg" width="30%" height="30%">
