@@ -84,3 +84,12 @@ source 가상 환경 경로/bin/activate
  <img src = "files/6_downscaled.jpg" width="30%" height="30%">
  <img src = "files/6_upscaled.png" width="30%" height="30%">
 </p>
+
+<h1>
+ Aging with Custom Model
+</h1>
+python generate.py --outdir=out --trunc=1 --seeds=85,265,297,849 \
+    --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metfaces.pkl
+
+
+    
