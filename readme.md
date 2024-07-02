@@ -25,6 +25,7 @@ https://github.com/yuval-alaluf/SAM
 
 <br>
 
+```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
 pip install ninja setuptools matplotlib tqdm
@@ -36,16 +37,17 @@ python scripts/inference_side_by_side.py \
 --test_batch_size=4 \
 --test_workers=4 \
 --target_age=0,10,20,30,40,50,60,70,80
-
+```
 
 <br><br><br><br>
 
+```
 sudo apt install python3-venv
 
 python3 -m venv 'venvname'
 
 source 가상 환경 경로/bin/activate
-
+```
 
 <br><br><br>
 <h1> 
@@ -90,8 +92,11 @@ source 가상 환경 경로/bin/activate
 <h1>
  Aging with Custom Model
 </h1>
+
+```
 python generate.py --outdir=out --trunc=1 --seeds=85,265,297,849 \
     --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metfaces.pkl
+```
 
 files/custom_model/1_aging.png
 
@@ -120,6 +125,23 @@ files/custom_model/1_aging.png
 </p>
     
 <>
-https://velog.io/@zxxzx1515/%EC%98%A4%EB%A5%98-%EB%85%B8%ED%8A%B8-libstdc.so.6-version-glibcxx3.4.30-not-found
+
+```
+libstdc++.so.6: version `glibcxx_3.4.30' not found
+
+
+// 해당 버전을 포함하고 있는 gcc compiler 버전을 설치해주어 해결했다. 환경 분석이 생각보다 오래걸리니 참고하자.
+
+$ conda install -c conda-forge gcc=12.1.0
+
+glibcxx_3.4.30 가 없어서 gcc 12.1.0 을 설치해줬지만, 추후에 비슷한 문제가 발생한다면 해당하는 gcc 버전을 찾아서 설치해주면 될 것 같다. 
+
 
 conda install -c conda-forge gxx_linux-64
+```
+
+```
+ImportError: /home/nxrlab/miniconda3/envs/eg3d/lib/python3.9/site-packages/../../libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /home/nxrlab/.cache/torch_extensions/py39_cu111/bias_act_plugin/b46266ff65f9fa53c32108953a1c6f16-nvidia-geforce-rtx-3080/bias_act_plugin.so)
+
+nxrlab@nxrlab:~/Downloads/eg3d$ conda install -c conda-forge libstdcxx-ng
+```
