@@ -1,25 +1,43 @@
 
+Ubuntu 에서 테스트하였음 
+
+https://docs.anaconda.com/anaconda/install/linux/ 에서 Anaconda설치
+
+https://github.com/hafriedlander/SmallDogBig 에서 파일을 받은 후 
+
+```
+conda env create -f environment.yaml
+conda activate smalldogbig
+```
+
+Weights 문단에 있는 `.pt`파일 다운로드 
+
+`python smalldogbig.py` 실행
+
+
+<br><br><br>
 https://github.com/NVlabs/stylegan2-ada-pytorch
 
-<br>
+`$ nvidia-smi 에서` 
+`Driver Version`과 `CUDA Version` 확인 후 
 
-$ nvidia-smi
+`https://pytorch.org/` 에서 알맞는 버전 선택(12.1 작동 확인함) 후 설치
 
-https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
+홈페이지에서 제공하는 명령 : `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
 
-https://pytorch.org/
+기타 필요한 의존성 파일 설치 시 `error: externally-managed-environment` 에러가 발생하면 
 
-https://velog.io/@dongju101/error-externally-managed-environment-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0
+`sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED` 로 해결
 
- -> sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
 
-https://github.com/NVlabs/stylegan2-ada-pytorch
-
+<br><br><br>
 pip install setuptools
 
 sudo apt install nvidia-cuda-toolkit
 
-<br><br>
+
+
+<br><br><br>
 
 https://github.com/yuval-alaluf/SAM
 
@@ -49,82 +67,6 @@ python3 -m venv 'venvname'
 source 가상 환경 경로/bin/activate
 ```
 
-<br><br><br>
-<h1> 
- Upscaling Test
-</h1>
-<p float="left">
- <img src = "files/1.jpeg" width="30%" height="30%">
- <img src = "files/1_downscaled.jpg" width="30%" height="30%">
- <img src = "files/1_upscaled.png" width="30%" height="30%">
-</p>
-<br>
-<p float="left">
- <img src = "files/2.jpeg" width="30%" height="30%">
- <img src = "files/2_downscaled.jpg" width="30%" height="30%">
- <img src = "files/2_upscaled.png" width="30%" height="30%">
-</p>
-<br>
-<p float="left">
- <img src = "files/3.jpeg" width="30%" height="30%">
- <img src = "files/3_downscaled.jpg" width="30%" height="30%">
- <img src = "files/3_upscaled.png" width="30%" height="30%">
-</p>
-<br>
-<p float="left">
- <img src = "files/4.jpeg" width="30%" height="30%">
- <img src = "files/4_downscaled.jpg" width="30%" height="30%">
- <img src = "files/4_upscaled.png" width="30%" height="30%">
-</p>
-<br>
-<p float="left">
- <img src = "files/5.jpeg" width="30%" height="30%">
- <img src = "files/5_downscaled.jpg" width="30%" height="30%">
- <img src = "files/5_upscaled.png" width="30%" height="30%">
-</p>
-<br>
-<p float="left">
- <img src = "files/6.jpeg" width="30%" height="30%">
- <img src = "files/6_downscaled.jpg" width="30%" height="30%">
- <img src = "files/6_upscaled.png" width="30%" height="30%">
-</p>
-
-<h1>
- Aging with Custom Model
-</h1>
-
-```
-python generate.py --outdir=out --trunc=1 --seeds=85,265,297,849 \
-    --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metfaces.pkl
-```
-
-files/custom_model/1_aging.png
-
-<p float="left">
- <img src = "files/custom_model/1_source.png" width="30%" height="30%">
- <img src = "files/custom_model/1_upscaled.png" width="30%" height="30%">
- <img src = "files/custom_model/1_aging.png" width="30%" height="30%">
-</p>
-<br>
-<p float="left">
- <img src = "files/custom_model/2_source.png" width="30%" height="30%">
- <img src = "files/custom_model/2_upscaled.png" width="30%" height="30%">
- <img src = "files/custom_model/2_aging.png" width="30%" height="30%">
-</p>
-<br>
-<p float="left">
- <img src = "files/custom_model/3_source.png" width="30%" height="30%">
- <img src = "files/custom_model/3_upscaled.png" width="30%" height="30%">
- <img src = "files/custom_model/3_aging.png" width="30%" height="30%">
-</p>
-<br>
-<p float="left">
- <img src = "files/custom_model/4_source.png" width="30%" height="30%">
- <img src = "files/custom_model/4_upscaled.png" width="30%" height="30%">
- <img src = "files/custom_model/4_aging.png" width="30%" height="30%">
-</p>
-    
-<>
 
 ```
 libstdc++.so.6: version `glibcxx_3.4.30' not found
