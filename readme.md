@@ -1,5 +1,5 @@
 
-Ubuntu 에서 테스트하였음 
+Ubuntu 24.04에서 테스트 하였습니다. 
 
 https://docs.anaconda.com/anaconda/install/linux/ 에서 Anaconda설치
 
@@ -18,7 +18,7 @@ Weights 문단에 있는 `.pt`파일 다운로드
 <br><br><br>
 https://github.com/NVlabs/stylegan2-ada-pytorch
 
-`$ nvidia-smi 에서` 
+`$ nvidia-smi` 에서
 `Driver Version`과 `CUDA Version` 확인 후 
 
 `https://pytorch.org/` 에서 알맞는 버전 선택(12.1 작동 확인함) 후 설치
@@ -28,13 +28,6 @@ https://github.com/NVlabs/stylegan2-ada-pytorch
 기타 필요한 의존성 파일 설치 시 `error: externally-managed-environment` 에러가 발생하면 
 
 `sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED` 로 해결
-
-
-<br><br><br>
-pip install setuptools
-
-sudo apt install nvidia-cuda-toolkit
-
 
 
 <br><br><br>
@@ -59,6 +52,8 @@ python scripts/inference_side_by_side.py \
 
 <br><br><br><br>
 
+Python venv 사용법
+
 ```
 sudo apt install python3-venv
 
@@ -67,7 +62,12 @@ python3 -m venv 'venvname'
 source 가상 환경 경로/bin/activate
 ```
 
+오류 시 대처방법 메모
+```
+pip install setuptools
 
+sudo apt install nvidia-cuda-toolkit
+```
 ```
 libstdc++.so.6: version `glibcxx_3.4.30' not found
 
